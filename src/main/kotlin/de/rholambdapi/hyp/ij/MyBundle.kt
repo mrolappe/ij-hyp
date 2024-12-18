@@ -1,4 +1,4 @@
-package com.github.mrolappe.ijhyp
+package de.rholambdapi.hyp.ij
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.NonNls

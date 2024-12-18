@@ -1,9 +1,9 @@
-package com.github.mrolappe.ijhyp.services
+package de.rholambdapi.hyp.ij.services
 
 import com.intellij.openapi.components.Service
 import com.intellij.openapi.diagnostic.thisLogger
 import com.intellij.openapi.project.Project
-import com.github.mrolappe.ijhyp.MyBundle
+import de.rholambdapi.hyp.ij.MyBundle
 
 @Service(Service.Level.PROJECT)
 class MyProjectService(project: Project) {

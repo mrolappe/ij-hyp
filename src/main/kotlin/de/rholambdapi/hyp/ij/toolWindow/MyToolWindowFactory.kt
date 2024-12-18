@@ -1,4 +1,4 @@
-package com.github.mrolappe.ijhyp.toolWindow
+package de.rholambdapi.hyp.ij.toolWindow
 
 import com.intellij.openapi.components.service
 import com.intellij.openapi.diagnostic.thisLogger
@@ -8,8 +8,8 @@ import com.intellij.openapi.wm.ToolWindowFactory
 import com.intellij.ui.components.JBLabel
 import com.intellij.ui.components.JBPanel
 import com.intellij.ui.content.ContentFactory
-import com.github.mrolappe.ijhyp.MyBundle
-import com.github.mrolappe.ijhyp.services.MyProjectService
+import de.rholambdapi.hyp.ij.MyBundle
+import de.rholambdapi.hyp.ij.services.MyProjectService
 import javax.swing.JButton
 
 
