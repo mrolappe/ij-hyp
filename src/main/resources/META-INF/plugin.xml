@@ -9,6 +9,8 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
+        <fileType name="Hyp" implementationClass="de.rholambdapi.hyp.ij.HypFileType" extensions="hyp" />
+
         <toolWindow factoryClass="de.rholambdapi.hyp.ij.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
     </extensions>
 
