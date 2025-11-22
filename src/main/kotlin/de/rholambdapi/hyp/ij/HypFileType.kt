@@ -3,9 +3,12 @@ package de.rholambdapi.hyp.ij
 import com.intellij.icons.AllIcons
 import com.intellij.openapi.fileTypes.ex.FileTypeIdentifiableByVirtualFile
 import com.intellij.openapi.vfs.VirtualFile
-import javax.swing.Icon
 
 class HypFileType : FileTypeIdentifiableByVirtualFile {
+    companion object {
+        val INSTANCE = HypFileType()
+    }
+
     override fun getName() = "Hyp"
 
     override fun getDescription() = "Hypertext"
@@ -17,7 +20,8 @@ class HypFileType : FileTypeIdentifiableByVirtualFile {
     override fun isBinary() = true
 
     override fun isMyFileType(file: VirtualFile): Boolean {
-        println("TODO, HypFileType::isMyFileType; file: $file")
-        return file.extension == "hyp"
+        val isMyType = file.extension == "hyp"
+        println("TODO, HypFileType::isMyFileType; file: $file -> isMyType: $isMyType")
+        return isMyType
     }
 }
