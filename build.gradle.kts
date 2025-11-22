@@ -1,5 +1,6 @@
 import org.jetbrains.changelog.Changelog
 import org.jetbrains.changelog.markdownToHTML
+import org.jetbrains.intellij.platform.gradle.IntelliJPlatformType
 import org.jetbrains.intellij.platform.gradle.TestFrameworkType
 
 plugins {
@@ -44,7 +45,6 @@ dependencies {
         // Plugin Dependencies. Uses `platformPlugins` property from the gradle.properties file for plugin from JetBrains Marketplace.
         plugins(providers.gradleProperty("platformPlugins").map { it.split(',') })
 
-        instrumentationTools()
         pluginVerifier()
         zipSigner()
         testFramework(TestFrameworkType.Platform)
@@ -104,7 +104,9 @@ intellijPlatform {
 
     pluginVerification {
         ides {
-            recommended()
+            create(IntelliJPlatformType.IntellijIdeaCommunity, "2024.2")
+            create(IntelliJPlatformType.IntellijIdeaCommunity, "2024.3.6")
+            create(IntelliJPlatformType.IntellijIdeaCommunity, "2025.2.4")
         }
     }
 }
