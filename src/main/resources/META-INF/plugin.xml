@@ -15,6 +15,5 @@
     </extensions>
 
     <applicationListeners>
-        <listener class="de.rholambdapi.hyp.ij.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
     </applicationListeners>
 </idea-plugin>
